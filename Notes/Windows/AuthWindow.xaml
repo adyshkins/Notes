@@ -1,0 +1,66 @@
+﻿<Window x:Class="Notes.AuthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Notes"
+        mc:Ignorable="d"
+        Title="Authorization" 
+        Height="600" 
+        Width="400"
+        ResizeMode="NoResize">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="MyNotes"
+                       HorizontalAlignment="Left"
+                       FontSize="25"
+                       FontWeight="DemiBold"
+                       Margin="0 0 0 0" FontFamily="Snap ITC"/>
+
+            <TextBlock Text="Authorization"
+                       HorizontalAlignment="Center"
+                       FontSize="25"
+                       FontWeight="DemiBold"
+                       Margin="0 10 0 0"/>
+
+            <TextBlock Text="Login"
+                       HorizontalAlignment="Center"
+                       FontSize="18"
+                       Margin="0 80 0 0"/>
+            <TextBox x:Name="txtLogin"
+                     Width="200"
+                     Height="35"
+                     FontSize="18"
+                     VerticalContentAlignment="Center"/>
+
+            <TextBlock Text="Password"
+                       HorizontalAlignment="Center"
+                       FontSize="18"
+                       Margin="0 40 0 0"/>
+            <PasswordBox x:Name="txtPassword"
+                     Width="200"
+                     Height="35"
+                     FontSize="18"
+                     VerticalContentAlignment="Center"/>
+
+            <Button x:Name="btnSignIn"
+                    Content="Sign In"
+                    Width="200"
+                    Height="35"
+                    FontSize="18"
+                    Margin="0 70 0 0"
+                    Click="btnSignIn_Click"/>
+
+            <Button x:Name="btnGuest"
+                    Content="Log in as a guest"
+                    Width="200"
+                    Height="35"
+                    FontSize="18"
+                    Margin="0 70 0 0"
+                    Background="{x:Null}"
+                    BorderThickness="0"
+                    Click="btnGuest_Click"/>
+            
+        </StackPanel>
+    </Grid>
+</Window>

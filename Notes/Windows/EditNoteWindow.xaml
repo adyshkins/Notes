@@ -1,0 +1,55 @@
+﻿<Window x:Class="Notes.Windows.EditNoteWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Notes.Windows"
+        mc:Ignorable="d"
+        Title="EditNoteWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="MyNotes"
+                       HorizontalAlignment="Left"
+                       FontSize="25"
+                       FontWeight="DemiBold"
+                       Margin="0 0 0 0" FontFamily="Snap ITC"/>
+
+            <TextBlock Text="Edit Note"
+                       HorizontalAlignment="Center"
+                       FontSize="25"
+                       FontWeight="DemiBold"
+                       Margin="0 10 0 0"/>
+
+            <TextBlock Text="Topic"
+                       HorizontalAlignment="Center"
+                       FontSize="18"
+                       Margin="0 30 0 0"/>
+            <TextBox x:Name="txtTopic"
+                     Width="200"
+                     Height="35"
+                     FontSize="18"
+                     VerticalContentAlignment="Center"/>
+
+            <TextBlock Text="Message"
+                       HorizontalAlignment="Center"
+                       FontSize="18"
+                       Margin="0 20 0 0"/>
+            <TextBox x:Name="txtMessage"
+                     Height="81"
+                     FontSize="18"
+                     VerticalContentAlignment="Center" 
+                     Margin="150,0,150,0"/>
+
+            <Button x:Name="btnEdit"
+                    Content="Edit note"
+                    Width="200"
+                    Height="35"
+                    FontSize="18"
+                    Margin="0 70 0 0"
+                    Click="btnEdit_Click"/>
+
+
+
+        </StackPanel>
+    </Grid>
+</Window>
